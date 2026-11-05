@@ -1,4 +1,19 @@
-# Experiment 10
+# exp10
+
+Flutter experiment 10 - a login and registration app using Firebase Authentication and Firestore.
+
+## Use
+
+```
+flutter pub add exp10
+```
+
+```dart
+import 'package:exp10/exp10.dart';
+
+runApp(const AuthApp());
+```
+
 
 ## One-time Firebase setup (needed before it runs)
 This experiment uses Google Cloud Firestore. The file `lib/firebase_options.dart`
@@ -16,3 +31,14 @@ is created for your own Firebase project and is not included here.
 2. Open a terminal and run:  flutter pub get
 3. Pick a device (Android phone, emulator, Chrome) from the bottom-right corner.
 4. Press F5 or run:  flutter run
+
+## Firebase setup
+
+This package ships with placeholder Firebase options. Before running, create your own Firebase project and run:
+
+```
+dart pub global activate flutterfire_cli
+flutterfire configure
+```
+
+This regenerates `lib/firebase_options.dart` and `android/app/google-services.json` for your project.
